@@ -1,0 +1,7 @@
+.link-text-blue {
+    @apply text-sm font-semibold transition duration-300 hover:text-blue-600;
+}
+
+.responsive {
+    @apply sm:px-0 sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl;
+}

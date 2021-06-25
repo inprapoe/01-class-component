@@ -1,12 +1,17 @@
 import React from 'react';
 import './App.css';
-import Users from './pages/Users';
+import HomeScreen from './pages/HomeScreen.jsx';
+import Navbar from './components/Navbar/Navbar';
+import {BrowserRouter as Router, Route} from 'react-router-dom'
 
 function App() {
   return (
-    <>
-      <Users/>
-    </>
+    <Router>
+      <Navbar/>
+      <main className="">
+        <Route path="/" component={HomeScreen} exact/>
+      </main>
+    </Router>
   );
 }
 
