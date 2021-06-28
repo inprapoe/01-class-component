@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const AnimeCard = (props) => {
     return (
-        <Link to='/' className="card group">
+        <Link to={`/anime/${props.anime.mal_id}`} className="card group">
             <div className="relative w-full overflow-hidden rounded">
                 <div className="card-img-container">
                     <img src={props.anime.image_url} alt=""/>

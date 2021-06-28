@@ -9,9 +9,9 @@ const useFetch = (link) => {
         setLoading(true)
         fetch(link) 
             .then((res) => res.json())
-            .then((data) => {
-                setData(data);
-            })        
+            .then((data) => 
+                data.length !== 0 ? setData(data) : ''
+            )        
             .catch((err) => setError(err))
             .finally(() => {
                 setLoading(false)
